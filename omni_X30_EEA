@@ -17,11 +17,11 @@ PRODUCT_COPY_FILES += device/${_VENDORNAME_}/${_CODENAME_}/prebuilt/kernel:kerne
 # Fles under $(LOCAL_PATH)/recovery/root/ gets automatically copied into recovery
 # PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/*:root/*
 
-PRODUCT_DEVICE := ${_CODENAME_}
-PRODUCT_NAME := omni_${_CODENAME_}
-PRODUCT_BRAND := ${_VENDORNAME_}
-PRODUCT_MODEL := ${_CODENAME_}
-PRODUCT_MANUFACTURER := ${_VENDORNAME_}
+PRODUCT_DEVICE := X30_EEA
+PRODUCT_NAME := omni_X30_EEA
+PRODUCT_BRAND := CUBOT
+PRODUCT_MODEL := X30_EEA
+PRODUCT_MANUFACTURER := CUBOT
 
 # Forcefully add mtp support (adb is already there)
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -30,5 +30,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Add fingerprint from Stock ROM build.prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
     # These lines are from my device. You MUST Replace yours.
-    BUILD_FINGERPRINT="WALTON/Primo_RX5/Primo_RX5:6.0/MRA58K/1465782828:user/release-keys" \
-    PRIVATE_BUILD_DESC="full_gionee6735_65u_m0-user 6.0 MRA58K 1465782828 release-keys"
+    BUILD_FINGERPRINT="CUBOT/X30_EEA/X30:10/QP1A.190711.020/20211202:user/release-keys" \
+    PRIVATE_BUILD_DESC="full_v965-user 10 QP1A.190711.020 20211202 release-keys"
